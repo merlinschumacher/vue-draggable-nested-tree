@@ -1883,17 +1883,7 @@
         var data = this.data;
         return this.isRoot || data && data.children && data.children.length && data.open;
       },
-      innerBackStyle: function innerBackStyle() {
-        var r = {
-          marginBottom: this.store.space + 'px'
-        };
-
-        if (!this.isRoot && this.level > 1) {
-          r.paddingLeft = (this.level - 1) * this.store.indent + 'px';
-        }
-
-        return r;
-      }
+      innerBackStyle: function innerBackStyle() {}
     },
     watch: {
       data: {
